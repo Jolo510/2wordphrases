@@ -104,6 +104,11 @@ if (Meteor.isClient) {
 
       // Process URL 
       Meteor.call("processWebsite", website, function(error, result) {
+        if (error) {
+          alert("Error has occured"); 
+          // Enable Form
+          $(".disableOnSubmit").prop("disabled", false);
+        }
         var splitResult; 
         for (var i=0; i < result.length; i++) { 
           splitResult = result[i].split(" "); 
