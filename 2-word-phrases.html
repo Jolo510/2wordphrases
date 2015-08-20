@@ -7,17 +7,21 @@
 <body>
 	<div class="container"> 
 		<header>
-			<h1>Welcome to 2 word phrase count!</h1>
-			<h4>Get a website's most common 2 word phrase!</h4> 
+			<h1>Two Phrase Word!</h1>
+			<br />
+			<h3>Get a website's top 10 most common 2 word phrases!</h3> 
+			<h4>Must contain http:// or https:// &nbsp;&nbsp; (ie. https://www.mailyou.co)</h4>
+			<br />
 		</header>
-  		<br />   			
-
   		<form class="form-inline process-website">
   			<div class="form-group"> 
   				<!-- <input type="url" name="website" class="form-control disableOnSubmit" required pattern="https?://.+" /> -->
-  				<input type="text" name="website" placeholder="www.google.com" class="form-control disableOnSubmit"/>
+  				<input type="url" name="website" placeholder="http://www.johnnie.me" class="form-control disableOnSubmit"/>
   			</div> 
-  			<button type="submit" class="btn btn-default disableOnSubmit">Enter</button>
+  			<button type="submit" class="btn btn-primary form-control disableOnSubmit">Enter</button>
   		</form> 
+  		<br />
+  		<ul id="phrase-list" class="list-group">
+  		</ul>
 	</div> 
 </body>
